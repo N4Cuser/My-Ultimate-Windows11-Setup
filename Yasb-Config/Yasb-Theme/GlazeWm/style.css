@@ -1,1 +1,618 @@
+* {
+    font-size: 12px;
+    color: #bec8e7;
+    font-weight: 500;
+    font-family: "JetBrainsMono NFP";
+    margin: 0;
+    padding: 0;
+}
+.yasb-bar {
+    padding: 0;
+    margin: 0;
+}
+.widget {
+    padding: 0 8px;
+    margin: 0 0px;
+    border-radius: 10px;
+}
+.widget .icon {
+    font-size: 18px;
+}
+.win-btn {
+    background-color: #f3bf7d;
+}
+.win-btn .icon {
+    color: #221f2e;
+}
 
+/* Traffic */
+.traffic-widget {
+    background-color: #f3bf7d;
+    padding: 0;
+}
+.traffic-widget .icon {
+    color: #221f2e;
+    padding-right: 2px;
+    padding-left: 6px;
+}
+.traffic-widget .label {
+    background-color: #221f2e;
+    margin: 2px;
+    border-radius: 10px;
+    padding: 0 6px;
+    color: #FFF;
+}
+
+/* Clock widget */
+.clock-widget {
+    background-color: #c9a0c1;
+    padding: 0;
+}
+.clock-widget .icon {
+    color: #221f2e;
+    padding: 0 6px;
+}
+.clock-widget .icon.alarm {
+    color: #221f2e;
+    margin-left: 4px;
+}
+.clock-widget .label {
+    background-color: #221f2e;
+    color: #FFF;
+    padding: 0 6px;
+    margin: 2px;
+    border-radius: 10px;
+}
+/* Calendar, Alarm, and Timer Popups – DiskWidget Theme */
+.clock-popup.alarm,
+.clock-popup.timer,
+.clock-popup.calendar {
+    min-width: 460px;
+    background-color: #FFFFFF49; /*Calender Bg*/
+}
+/* Calendar Table Items */
+.clock-popup.calendar .calendar-table {
+    background-color: transparent;
+}
+.clock-popup.calendar .calendar-table::item {
+    background-color: #FFFFFF29; /*item bg*/
+    color: #221f2e; 
+    font-family: 'Segoe UI';
+    margin: 0;
+    padding: -4;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+.clock-popup.calendar .calendar-table::item:selected {
+    color: #fff;       
+    font-weight: bold;
+    background-color: #221f2e; 
+    border-radius: 12px;
+}
+.clock-popup.calendar .day-label,
+.clock-popup.calendar .month-label,
+.clock-popup.calendar .date-label {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: #221f2e; 
+    font-weight: 700;
+    min-width: 180px;
+    max-width: 180px;
+}
+.clock-popup.calendar .month-label {
+    font-weight: normal;
+}
+.clock-popup.calendar .date-label {
+    font-size: 88px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-top: -20px;
+}
+.clock-popup.calendar .extended-container {
+    border-left: 1px solid #FFFFFF30;
+    background-color: transparent;
+    padding-left: 16px;
+}
+.clock-popup.calendar .extended-container .button.alarm.small,
+.clock-popup.calendar .extended-container .button.timer.small {
+    min-width: 32px;
+    min-height: 16px;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+.clock-popup.calendar .extended-container .upcoming-events-header {
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    margin: 4px 0 8px 0;
+    color: #d2d6e2;
+}
+.clock-popup.calendar .extended-container .upcoming-events-item {
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    padding: 3px 0;
+    color: #b2b6c0;
+}
+.clock-popup.calendar .extended-container .upcoming-events-item:hover {
+    color: #ced1d8;
+}
+
+/* Power menu */
+.power-menu-widget {
+    background-color: #c9a0c1;
+    padding: 0;
+}
+.power-menu-widget .label {
+    color: #221f2e;
+    padding: 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Language */
+.language-widget {
+    background-color: #c9a0c1;
+    padding: 0;
+}
+.language-widget .icon {
+    color: #221f2e;
+    padding: 0 6px;
+}
+.language-widget .label {
+    background-color: #221f2e;
+    color: #FFF;
+    padding: 0 8px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+/* Taskbar */
+.taskbar-widget {
+    background-color: #89b4fa;
+    padding: 0;
+}
+.taskbar-widget .app-container {
+    padding: 0 8px;
+    border: none;
+    margin: 0;
+}
+.taskbar-widget .app-container .app-title {
+    padding-left: 4px;
+}
+
+/* Active Window */
+.active-window-widget {
+    background-color: #c6a7e8;
+    padding: 0;
+}
+.active-window-widget .label {
+    color: #FFF;
+    background-color: #221f2e;
+    padding: 0 8px;
+    margin: 2px;
+    border-radius: 10px;
+}
+.active-window-widget .icon {
+    padding: 0 8px;
+    border: none;
+    margin: 0;
+    background-color: #c792ff;
+}
+
+/*POWER MENU POPUP*/
+.uptime {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-weight: 600;
+}
+.power-menu-popup {
+    background-color: #fffff1; /*Power Big bg*/
+    border-radius: 12px;
+
+}
+.power-menu-popup .button {
+    padding: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    background-color: #FFFFFF50;
+    border: 5px solid #dadada; /*Border colour*/
+    margin: 0px;
+}
+.power-menu-popup .button.hover {
+    background-color: #f4f5ff;
+}
+.power-menu-popup .button .label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #221f2e;
+
+}
+.power-menu-popup .button .icon {
+    font-size: 64px;
+    padding-top: 32px;
+    color: #c9a0c1;
+}
+.power-menu-popup .button.cancel .icon {
+    color: #f38ba8 ;
+}
+.power-menu-popup .button.shutdown .icon {
+    color: #a6e3a1;
+}
+.power-menu-popup .button.sleep .icon {
+    color: #f9e2af;
+}
+
+/*GZM TDI*/
+.glazewm-tiling-direction {
+    background-color: #ffff;
+    padding: 0 0px 0 0px;
+    margin: 0;
+}
+.glazewm-tiling-direction .btn {
+    font-size: 20px;
+    background-color: #c6a7e8;
+    width: 14px;
+    padding: 1 8px 1 8px;
+    color: #221f2e;
+    border-radius: 10px;
+}
+
+/* Memory*/
+.memory-widget {
+    background-color: #f3bf7d;   
+    padding: 2;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.memory-widget .label {
+    background-color: #221f2e; 
+    color: #FFF;
+    padding: 0 8px;
+    margin: 0px 0px 0px 0;       
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.memory-widget .histogram {
+    background-color: #221f2e;
+    color: #89b4fa;
+    padding: 0 4px;
+    margin: 1px 0 1px 0;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.memory-widget .icon {
+    color: #221f2e;       
+    padding: 0 4px 0 4;    
+    font-size: 18px;       
+}
+
+/* Cpu */
+.cpu-widget {
+    background-color: #f3bf7d;   
+    padding: 2px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.cpu-widget .icon {
+    color: #221f2e;      
+    padding: 0 4px 0 4px;
+    font-size: 18px;
+}
+.cpu-widget .label {
+    background-color: #221f2e;  
+    color: #FFF;             
+    padding: 0 8px;
+    margin: 0px 0px 0px 0;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Cpu */
+.cpu-widget .histogram {
+    background-color: #221f2e;  
+    color: #89b4fa;
+    padding: 0 4px;
+    margin: 1px 0 1px 0;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Cava */
+.cava-widget {
+    background-color: #89b4fa;   
+    padding: 6px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Apps */
+.apps-widget {
+    background-color: #c6a7e8; 
+    padding: 2px 2px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.apps-widget .icon {
+    width: 20px;              
+    height: 20px;
+    margin-right: 4px;       
+    border-radius: 10px;      
+    background-color: #2b3a50; 
+    padding: 2px;
+}
+.apps-widget .label {
+    background-color: #221f2e; 
+    color: #FFF;           
+    padding: 0 8px;
+    margin: 0px 2px 0px 0;      
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.apps-widget .icon:hover {
+    background-color: #3a2c50; 
+}
+
+/* Disk */
+.disk-widget {
+    background-color: #c9a0c1;   
+    padding: 2px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.disk-widget .icon {
+    color: #221f2e;       
+    padding: 0 4px 0 4px;
+    font-size: 18px;
+}
+.disk-widget .label {
+    background-color: #221f2e;   
+    color: #FFF;              
+    padding: 0 8px;
+    margin: 0px 0px 0px 0;      
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.disk-group {
+    background-color: #FFFFFF25;  /*disk bg*/
+}
+.disk-group-row {
+    display: flex;
+    align-items: center;
+    min-width: 220px;
+    max-width: 220px;
+    height: 36px;
+    padding: 0 6px;
+    border-radius: 8px;         
+    background-color: #FFFFFF27; /*Group row bg*/
+    color: #221f2e;             
+    border: 1px solid #FFFFFF20; /*Group border colour*/
+}
+.disk-group-row:hover {
+    background-color: #FFFFFF4D;  
+    border: 2px solid #221f2e;  
+}
+.disk-group-label-size {
+  color: #221f2e; 
+}
+.disk-group-row .icon {
+    font-size: 16px;
+    color: #221f2e;             
+    padding-right: 6px;
+}
+.disk-group-label {
+    font-size: 14px;
+    color: #221f2e;             
+    font-weight: 500;
+    flex-grow: 1;               
+}
+.disk-group-label-bar {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #5c5f77; 
+    border-radius: 8px;
+    margin-left: 6px;
+}
+.disk-group-label-bar::chunk {
+    background-color: #221f2e;  
+    border-radius: 8px;
+}
+
+/* GLZ WP */
+.glazewm-workspaces .offline-status {
+    color: #1e1e2e;
+}
+.glazewm-workspaces .ws-btn .label {
+    color: #FFF;
+}
+.glazewm-workspaces {
+    margin: 0;
+    background-color: #f38ba8;     
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+.glazewm-workspaces .ws-btn {
+    font-size: 14px;
+    background-color: #221f2e;
+    border: none;
+    padding: 2px 6px;             
+    border-radius: 10px;
+}
+.glazewm-workspaces .ws-btn.active_populated {
+    background-color: #221f2e;     
+    font-weight: 600;
+}
+.glazewm-workspaces .ws-btn.active_empty {
+    color: #221f2e;
+    background-color: #221f2e;     
+    font-weight: 500;
+}
+.glazewm-workspaces .ws-btn.populated {
+    color: #c6a7e8;
+}
+.glazewm-workspaces .ws-btn.empty {
+    color: #1e1e2e;
+}
+
+/* Wallpaper */
+.wallpapers-widget {
+    background-color: #f38ba8;   
+    padding: 2px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.wallpapers-widget .icon {
+    color: #221f2e;              
+    font-size: 18px;
+    padding: 0 6px;
+}
+.wallpapers-widget .label {
+    background-color: #FFF;  
+    color: #c6a7e8;
+    padding: 0 8px;
+    margin: 1px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.wallpapers-widget:hover .label {
+    background-color: #1b1925;
+}
+.wallpapers-gallery-buttons:hover {
+    background-color:rgba(255, 255, 255, 0.1)
+}
+.wallpapers-gallery-image {
+    border: 4px solid #221f2e;
+    border-radius: 16px;
+}
+.wallpapers-gallery-image:hover {
+    border: 4px solid rgb(66, 68, 83);
+}
+.wallpapers-gallery-image.focused {
+    border: 4px solid #f3bf7d;
+}
+
+/* Recycle */
+.recycle-bin-widget {
+    background-color: #c6a7e8;   
+    padding: 2px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.recycle-bin-widget .icon {
+    color: #221f2e;              
+    font-size: 18px;
+    padding: 0 6px;
+}
+.recycle-bin-widget .label {
+    background-color: #221f2e;   
+    color: #FFF;
+    padding: 0 8px;
+    margin: 0px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.recycle-bin-widget:hover .label {
+    background-color: #1b1925;
+}
+
+/* Home */
+.home-widget {
+    background-color: #f38ba8;  
+    padding: 8px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.home-widget .icon {
+    color: #221f2e;
+}
+.home-widget .icon:hover {
+    color: #221f2e;
+}
+.home-widget .label {
+    color: #221f2e;
+}
+.home-widget .label:hover {
+    color: #221f2e;
+}
+.home-menu {
+    background-color:#FFFFFF28; 
+}
+.home-menu .menu-item {
+    padding: 6px 48px 7px 16px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #221f3e; /*font colour*/
+    font-weight: 600;
+}
+.home-menu .menu-item:hover {
+    background-color:rgba(128, 130, 158, 0.15);
+    color: #fff;
+}
+.home-menu .separator {
+    max-height: 1px;
+    background-color:rgba(128, 130, 158, 0.3);
+}
+
+/*SYSTEM TRAY*/
+.systray {
+  background-color: #f3bf7d;
+  padding: 0;
+  margin: 0;
+  border: 0px solid ;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 10px;
+  padding-bottom: 0px;
+}
+.systray .button {
+  background: #e0b073;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: -2px;
+  padding-bottom: 0px;
+  
+}
+.systray .unpinned-visibility-btn {
+  border-radius: 10px;
+  color: #221f2e;
+  font-family: "Segoe Fluent Icons";
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.systray .unpinned-visibility-btn {
+  background-color: #f3bf7d;
+  padding: 6px;
+}
+
+/*Configuration by N4C. Theme inspired by Spectrum Symphony.*/
