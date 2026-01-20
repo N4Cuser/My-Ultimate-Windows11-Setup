@@ -504,15 +504,35 @@
 .wallpapers-gallery-buttons:hover {
     background-color:rgba(255, 255, 255, 0.1)
 }
+.wallpapers-gallery-window {
+    background-color: #1a1b26;
+    border: 0;
+    margin: 0;
+}
+.wallpapers-gallery-buttons {
+    font-size: 12px;
+    font-family: 'Bahnschrift';
+    background-color:#24283b;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin:0 8px 8px 8px;
+    width: 600px;
+}
+.wallpapers-gallery-buttons:hover {
+    background-color:#343B58;
+}
 .wallpapers-gallery-image {
-    border: 4px solid #221f2e;
-    border-radius: 16px;
+    border: 4px solid transparent;
+    border-radius: 10px;
 }
 .wallpapers-gallery-image:hover {
     border: 4px solid rgb(66, 68, 83);
 }
 .wallpapers-gallery-image.focused {
-    border: 4px solid #f3bf7d;
+    border: 4px solid #89b4fa;
 }
 
 /* Recycle */
