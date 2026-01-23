@@ -91,6 +91,6 @@
   "styleConstants[4]": "Text2 = #565f89",
   "styleConstants[5]": "Button = #cba6f7",
   "styleConstants[6]": "RED = #cba6f7",
-  "styleConstants[7]": "Border = #cba6f7",
+  "styleConstants[7]": "Border = transparent",
   "theme": ""
 }
