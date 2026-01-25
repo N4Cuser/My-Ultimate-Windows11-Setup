@@ -1,1 +1,1 @@
-# Ultimate-Whitebrown-Win11-Setup
+# Catppuccin-Windows-11
